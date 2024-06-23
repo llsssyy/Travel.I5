@@ -1,0 +1,94 @@
+/* 배경 */
+.modify_bg {
+  background-image: url("../../../public/resources/prj_imgs/bg/signUpBg.jpg");
+  background-size: cover;
+  height: 773px;
+  padding: 100px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  overflow-y: hidden;
+}
+
+/* 전체 메뉴*/
+#wrap_modify {
+    max-width: 430px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    position: fixed;
+    left: 50%;  /* 추가된 부분: 왼쪽 위치를 화면 가로 중앙으로 조정 */
+    transform: translateX(-50%); /* 추가된 부분: 수평 가운데 정렬을 위해 왼쪽으로 이동 */
+  }
+  
+  /* 각 메뉴 */
+
+  .rmenu_modify {
+    margin-bottom: 15px;
+  }
+  
+    /* 글자 */
+
+
+  #wrap_modify div.rmenu_modify label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+    /* 작성부분  */
+
+    #wrap_modify div.rmenu_modify input {
+    width: 420px;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+    /* 경고창 */
+
+    #wrap_modify div.rmenu_modify.message {
+    font-size: 15px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: flex-end; /* 버튼을 부모 요소의 오른쪽으로 정렬 */
+  }
+
+  /* 버튼 */
+
+  .modifyBtn,
+  .modifyCancelBtn,
+  .deletBtn {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px; /* 버튼 간격을 위한 여백 추가 (옵션) */
+    
+  }
+  
+  /* 삭제 버튼 */
+
+  .deletBtn {
+    background-color: #f44336; /* 삭제 버튼은 다른 색상으로 지정 (옵션) */
+  }
+  
+  /* 버튼 누른 효과 */
+  .modifyBtn:hover{
+    background-color: #3ece42;
+  }
+
+  .deletBtn:hover {
+    background-color: #e41c0d;
+  }
+
+  .modifyCancelBtn:hover {
+    background-color: #3ece42;
+  }
+  

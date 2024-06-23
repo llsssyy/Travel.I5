@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #242424;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #242424;
+}
+
+li {
+    list-style: none;
+}
+
+#wrap {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#wrap p {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 20px auto;
+}
+
+div.banner button {
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+div.banner button:hover {
+    background-color: #dadada;
+}
+
+div.menus {
+    margin-top: 50px;
+}
+
+div.menus a {
+    font-weight: bold;
+}
+
+div.sign_up {
+    margin-top: 50px;
+}
+
+div.sign_up input {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+div.sign_up button {
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+div.sign_up button:hover {
+    background-color: #dadada;
+}
+
+div.sign_in {
+    margin-top: 50px;
+}
+
+div.sign_in input {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+div.sign_in button {
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+div.sign_in button:hover {
+    background-color: #dadada;
+}
+
+div.memo {
+    margin-top: 50px;
+}
+
+div.memo input {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+div.memo button {
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+div.memo button:hover {
+    background-color: #dadada;
+}

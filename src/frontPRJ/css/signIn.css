@@ -1,0 +1,70 @@
+/* 배경*/
+.sign_in_bg {
+    background-image: url("../../../public/resources/prj_imgs/bg/mountain.jpg");
+    background-size: cover;
+    height: 773px;
+    padding: 150px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    
+}
+  
+  /* 전체 메뉴*/
+
+#sign_in_wrap {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    background-color: #fff;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* 각 메뉴 */
+
+  .menu_id,
+  .menu_pw {
+    margin-bottom: 15px;
+  }
+  
+  /* 글자 */
+
+  #sign_in_wrap div.menu_sign_in label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  /* 작성부분  */
+
+  #sign_in_wrap div.menu_sign_in input {
+    width: 400px;
+    padding: 8px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* 버튼 */
+
+  
+  .sign_in_btn {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  /* 버튼 누를 때 */
+
+  
+  .sign_in_btn:hover {
+    background-color: #257728;
+  }
+  

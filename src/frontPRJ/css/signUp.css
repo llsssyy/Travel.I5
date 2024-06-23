@@ -1,0 +1,94 @@
+/* 배경*/
+.sign_up_bg {
+    background-image: url("../../../public/resources/prj_imgs/bg/mont-snow.jpg");
+    background-size: cover;
+    height: 773px;
+    padding: 80px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+/* 전체 메뉴*/
+#wrap_sign_up {
+    max-width: 430px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    background-color: #fff;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 180px;
+    
+  }
+  
+  /* 각 메뉴 */
+
+  
+  .menu_sign_up {
+    margin-bottom: 15px;
+  }
+  
+  /* 글자 */
+
+  #wrap_sign_up div.menu_sign_up label {
+    display: block;
+    margin-bottom: 5px;
+    
+  }
+  
+  /* 작성부분  */
+
+  #wrap_sign_up div.menu_sign_up input {
+    width: 420px;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+  }
+  
+  /* 경고창 */
+
+  #wrap_sign_up div.menu_sign_up.message {
+    font-size: 15px;
+    padding: 2px;
+  }
+
+  #wrap_sign_up div.menu_sign_up.dupliMessage {
+    margin-top: 5px;
+  }
+
+  /* 버튼 */
+
+  .sign_up_Btn {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+  }
+
+  .dupliBtn {
+    background-color: #4caf50;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+   
+  }
+
+  .dupliBtn:hover,
+  .sign_up_Btn:hover {
+    background-color: #3ece42;
+  }
+  
+  
+
+  
+
+  

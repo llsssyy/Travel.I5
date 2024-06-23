@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.modal{
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .8);
+    display: flex;
+    justify-content: center;
+    z-index: 1000 !important;
+    color: #000;
+}
+
+.modal > div.body div{
+    margin: 0;
+    padding: 0;
+}
+
+.modal > div.body div h1, .modal > div.body div h2{
+    margin: 10px 0;
+}
+.modal > div.body div h2{
+    padding-bottom: 5px;
+    border-bottom: 3px solid #dadada;
+}
+
+.modal div.body > div h3{
+    border-bottom: 3px solid #dadada;
+    margin-top: 5px;
+    padding-bottom: 5px;    
+    margin-bottom:  10px;
+}
+.modal div.body > div div.detail{
+    text-align: left;
+}
+
+.modal div.body > div div.detail div{
+    text-align: left;
+    padding-top: 10px;
+}
+
+.modal div.body{
+    position: absolute;
+    margin: 50px;
+    padding: 40px;
+    width: 1000px;  height: 750px;
+    background-color: #aab7c8   ;
+    text-align: center;
+    box-shadow: 20px, 20px, 20px, 20px #000;
+    overflow-y: auto;    /*스크롤 만듬*/
+}
+
+.tripimg {
+    max-width: 983px;
+    min-width: 983px;
+    height: 450px;
+    object-fit: cover;
+}
+
+
+.comment > div.commentBox{
+    display: flex;
+    justify-content: center;
+}
+
+.comment > div > button{
+    margin-left: 10px;
+    width: 150px;
+}
+
+.comment > ul {
+    margin-top: 20px;
+}
+
+.comment > ul > li{
+    padding: 3px;
+    border-bottom: 1px solid #dadada;
+    display: flex;
+    justify-content:flex-start;
+}
+
+textarea {
+    resize: none;
+    padding: 10px;
+}
+
+.commentlist div.modifybox{
+    justify-content:center;
+}
+
+.commentlist > button{
+    margin-left: 10px;
+    width: 150px;
+    padding: 0;
+}
+
+.commentlist span.id{    
+    padding-right: 10px;
+    padding-left: 10px;
+    max-width: 100px;
+    min-width: 100px;
+}
+
+.commentlist span.btn{
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.commentlist span.comment{
+    border-left: 2px solid #dadada;
+    border-right: 2px solid #dadada;
+    padding-right: 10px;
+    padding-left: 10px;
+    max-width: 550px;
+    min-width: 550px;
+    overflow-wrap: break-word; /*알파벳 띄어쓰기 안하고 쭉 쓰면 개행 안되서 넣음*/
+}
+
+.commentlist span.time{
+    border-right: 2px solid #dadada;
+    padding-right: 10px;
+    padding-left: 10px;
+    max-width: 90px;
+    min-width: 90px;
+}

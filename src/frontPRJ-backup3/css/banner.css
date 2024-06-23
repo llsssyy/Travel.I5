@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+#banner_wrap{
+    /* width: 1400px; */
+    width: 1800px;
+    margin: 50px auto;
+    text-align: center;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#banner_wrap div.banner1 img,
+#banner_wrap div.banner2 img,
+#banner_wrap div.banner3 img{
+    /* width: 450px;  */
+    width: 575px;
+}

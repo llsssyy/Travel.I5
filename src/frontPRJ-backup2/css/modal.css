@@ -1,0 +1,89 @@
+.modal{
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .8);
+    display: flex;
+    justify-content: center;
+    z-index: 1000;    
+    color: #000;
+}
+
+.modal div.body{
+    position: absolute;
+    margin: 50px;
+    padding: 40px;
+    width: 1000px;  height: 750px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 20px, 20px, 20px, 20px #000;
+    overflow-y: auto;    /*스크롤 만듬*/
+}
+
+.modal div.body div{
+    margin: 10px;
+}
+
+.tripimg {
+    max-width: 800px;
+    min-width: 800px;
+    height: 450px;
+    object-fit: cover;
+}
+
+.modal div.body div.detail{
+    text-align: left;
+}
+
+.comment > div{
+    display: flex;
+    justify-content: center;   
+    
+}
+
+.comment > div.commentBox{
+    margin: 20px; 
+}
+
+.comment > div > button{
+    margin-left: 10px;
+    width: 100px;
+}
+
+.comment > ul {
+    margin-top: 20px;
+}
+
+.comment > ul > li{
+    border-bottom: 1px solid #dadada;
+    display: flex;
+    justify-content: center;
+    line-height: 100%;
+    margin: 10px;
+}
+
+.commentlist span.id{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.commentlist span.btn{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.commentlist span.comment{
+    border-left: 2px solid #dadada;
+    border-right: 2px solid #dadada;
+    padding-right: 10px;
+    padding-left: 10px;
+    max-width: 600px;
+    min-width: 600px;
+    overflow-wrap: break-word;
+}
+
+.commentlist span.time{
+    border-right: 2px solid #dadada;
+    padding-right: 10px;
+    padding-left: 10px;
+}

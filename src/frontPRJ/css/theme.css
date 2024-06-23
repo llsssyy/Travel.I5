@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #242424;
+}
+
+.is-dragging {
+	pointer-events: none;
+}
+
+#theme_wrap {
+    width: 1800px;
+    height: 580px;
+    margin: 0px auto;
+
+    background-color: #f4f6f8;
+}
+#theme_wrap div.theme_wrap_class{
+    width: 1200px;
+    height: 500px;
+    margin: 0px auto;
+    padding: 10px 0 5px 0;
+
+    text-align: center;
+}
+
+/* slide */
+#theme_wrap div.theme_select_bar{  
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#theme_wrap div.theme_header{
+    font-size: 2em;
+    font-weight: bold;
+    color: #312F2F;
+
+    text-align: center;
+    padding: 30px;
+}
+
+#theme_wrap div.theme_header div.quotationL_img{
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+#theme_wrap div.theme_select_bar button{
+    background-color: #dbe3ef;
+    border: 1px solid #dbe3ef;
+
+    /* background-color: #acc1e0;
+    border: 1px solid #acc1e0; */
+
+    color: #312F2F;
+    border-radius: 10px;
+    padding: 10px;
+
+    font-weight: bold;
+    font-size: 1.001em;
+
+    cursor: pointer;
+
+}
+
+#theme_wrap div.theme_select_bar button:hover{
+    background-color: #9eb4d3;
+    border: 1px solid #9eb4d3;
+
+    /* background-color: #788dad;
+    border: 1px solid #788dad; */
+    
+    color: #fdfdfd;
+}
+
+#theme_wrap div.theme_thums div.img_slide div.thum img {
+    min-width: 298px;
+    max-width: 298px;
+    height: 200px;
+    border-radius: 5px 5px 0 0;
+
+    /* pointer-events: none; */
+}
+
+#theme_wrap div.theme_thums div.img_slide div.thum:hover {
+    background-color: #dadada;
+}
+
+#theme_wrap div.theme_thums div.thum {
+    min-width: 300px;
+    max-width: 300px;
+    border: 1px solid #dadada;
+    border-radius: 5px 5px;
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+
+    margin: 0 50px 0 50px;
+
+    background-color: #fff;
+}
+
+#theme_wrap div.theme_thums div.img_content {
+    width: 300px;
+    text-align: center;
+    margin: 10px auto 10px;
+    padding: 10px 0;
+    font-size: 1.1em;
+
+    color: #5a5a5a;
+}
+
+#leftArw,
+#rightArw {
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#leftArw:hover,
+#rightArw:hover {
+    cursor: pointer;
+}
+
+#leftArw {
+    position: absolute;
+    left: -70px;
+    top: 110px;
+}
+
+#rightArw {
+    position: absolute;
+    right: -70px;
+    top: 110px;
+}
+

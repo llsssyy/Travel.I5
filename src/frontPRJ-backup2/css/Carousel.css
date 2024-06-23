@@ -1,0 +1,254 @@
+/* 현재 css 파일은 swiper 라이브러리에서 가져와 커스텀 함 */
+/* 전체 theme 영역(화살표와 점 색상, 화살표 크기) */
+:root {
+    --swiper-theme-color: #ffffff;
+    --swiper-navigation-size: 70px;
+    
+    
+}
+
+/* 슬라이더 영역 모두(너비 조정, 현재는 창 전체 크기에 맞춤) */
+.recomend-slider {
+    max-width: 1800px;
+    margin: 0 auto;
+    background-color: #8badd0;
+}
+
+/* 슬라이더 영역 중 이미지(너비 조정, 현재는 슬라이드 영역 크기에 맞춤) */
+.recomend-slider img {
+    width: 100%;
+}
+
+/* 점 이동 영역(bottom 조정하면 점 위치를 위 아래로 이동 가능)  */
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: 25px;
+    left: 0px;
+    width: 100%;
+}
+
+/* 점 이동 영역 중 디폴트 점(사이즈 조정함) */
+.swiper-pagination-bullet {
+    width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 80px));
+    height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 7px));
+    display: inline-block;
+    border-radius: 0;
+    background: var(--swiper-pagination-bullet-inactive-color, #000);
+    opacity: var(--swiper-pagination-bullet-inactive-opacity, .2);
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+/* 점 이동 영역 중 해당 슬라이드 점(맨앞 테마 색상 변경과 연관되어 함께 가져옴) */
+.swiper-pagination-bullet-active {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background: var(--swiper-pagination-color, rgba(0, 0, 0, 0.2));
+
+    &::before {
+        background-color: #ebe6e6;
+        animation: slide-progress 2s cubic-bezier(.3, 0, .3, 1) forwards;
+
+        .swiper-paused & {
+            animation-play-state: paused;
+        }
+    }
+}
+
+@keyframes slide-progress {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* 화살표 영역(맨앞 테마 화살표 크기 변경과 연관되어 함께 가져옴) */
+/* 화살표에 그림자 추가함 */
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-family: swiper-icons;
+    font-size: var(--swiper-navigation-size);
+    text-transform: none !important;
+    letter-spacing: 0;
+    font-variant: initial;
+    line-height: 1;
+    text-shadow: 0px 0px 20px #dadada;
+}
+
+/* 화살표 위치 약간 수정함 */
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+    left: 20px;
+    right: auto
+}
+
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+    right: 20px;
+    left: auto
+}
+
+/* 각 슬라이드 위의 텍스트 */
+
+.recomend-slider {
+    position: relative;
+}
+
+.recomend-slider div.recomend_text_left_align,
+.recomend-slider div.recomend_text_center_align,
+.recomend-slider div.recomend_text_right_align {
+    position: absolute;
+    height: 180px;
+    padding: 5px;
+    bottom: 120px;
+}
+
+
+.recomend-slider div.recomend_text_left_align {
+    left: 0px;
+    width: 1700px;
+}
+
+.recomend-slider div.recomend_text_center_align {
+    width: 1700px;
+    left: 45px;
+
+}
+
+.recomend-slider div.recomend_text_right_align {
+    right: 0px;
+    width: 1700px;
+}
+
+.recomend_text_title_left,
+.recomend_text_title_center,
+.recomend_text_title_right {
+    padding: 6px 60px 4px 60px;
+    font-size: 5em;
+    color: #FAB802;
+    margin: 0;
+    font-family: 'TmonMonsori', cursive;
+    text-shadow: 1px 2px #000000;
+}
+
+
+@font-face {
+    font-family: 'TmonMonsori';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.recomend_text_title_left {
+    text-align: left;
+}
+
+.recomend_text_title_center {
+    text-align: center;
+}
+
+.recomend_text_title_right {
+    text-align: right;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+.recomend_text_content_left,
+.recomend_text_content_center,
+.recomend_text_content_right {
+    color: #ffffff;
+    padding: 0px 60px 10px 60px;
+    font-size: 2.5em;
+    text-shadow: 0px 1px #353333, 1px 0px #353333;
+    font-family: 'Gowun Dodum', sans-serif;
+}
+
+.recomend_text_content_left {
+    text-align: left;
+}
+
+.recomend_text_content_center {
+    text-align: center;
+}
+
+.recomend_text_content_right {
+    text-align: right;
+}
+
+/* 캐러셀 텍스트 애니메이션 */
+.swiper-slide .recomend_text_title_left,
+.swiper-slide .recomend_text_content_left {
+    transition: all 1s ease-out;
+    transform: translateX(-200px);
+    opacity: 0;
+}
+
+.swiper-slide.swiper-slide-active .recomend_text_title_left,
+.swiper-slide.swiper-slide-active .recomend_text_content_left {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.swiper-slide .recomend_text_title_center,
+.swiper-slide .recomend_text_content_center {
+    transition: all 1s ease-out;
+    transform: translateY(100px);
+    opacity: 0;
+}
+
+.swiper-slide.swiper-slide-active .recomend_text_title_center,
+.swiper-slide.swiper-slide-active .recomend_text_content_center {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.swiper-slide .recomend_text_title_right,
+.swiper-slide .recomend_text_content_right {
+    transition: all 1s ease-out;
+    transform: translateX(200px);
+    opacity: 0;
+}
+
+.swiper-slide.swiper-slide-active .recomend_text_title_right,
+.swiper-slide.swiper-slide-active .recomend_text_content_right {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.start_pause_button_wrap {
+    position: absolute;
+    bottom: 24px;
+    z-index: 100;
+    right: 20px
+}
+
+.start_button,
+.pause_button {
+    width: 25px;
+    height: 25px;
+    padding-bottom: 2px;
+    margin: 3px;
+    text-align: center;
+    background-color: #ffffff;
+    border: none;
+}
+
+.start_button:hover,
+.pause_button:hover {
+    color: #5a5959;
+    cursor: pointer;
+}

@@ -1,0 +1,105 @@
+a {
+    text-decoration: none;
+    color: #5a5a5a;
+    text-align: center;
+}
+
+#theme_wrap {
+    width: 1200px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+#theme_wrap div.theme_select_bar{  
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#theme_wrap div.theme_select_bar a{
+    border: 1px solid #5a5a5a;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#theme_wrap div.theme_thums {
+    width: 100%;
+    text-align: center;
+}
+
+.slick-slider {/* 내장된 클래스 */
+    margin: 0 auto; /* 슬라이더를 수평 중앙 정렬 */
+    align-items: center;
+}
+
+#theme_wrap div.theme_thums a{
+    align-items: center;
+    text-align: center; /* 텍스트도 중앙 정렬되도록 설정 */
+}
+
+/*이미지와 설명을 감싸는 div*/
+#theme_wrap div.thum {
+    width: 100%; /* 이미지를 부모 요소에 맞게 100%로 설정 */
+    margin: 30px auto; /* 이미지 간격을 조절하기 위해 margin을 0으로 설정 */
+}
+
+#theme_wrap div.thum img {
+    max-width: 100%; /* 이미지가 부모 컨테이너를 벗어나지 않도록 설정 */
+  max-height: 100%; /* 이미지가 부모 컨테이너를 벗어나지 않도록 설정 */
+  margin: auto; /* 수평 가운데 정렬을 위해 margin을 auto로 설정 */
+}
+
+/*슬라이드 아래 간략 설명*/
+#theme_wrap div.thum div.img_content{
+    width: 100%; /* 이미지를 부모 요소에 맞게 100%로 설정 */
+    margin: 10px auto; /* 이미지 간격을 조절하기 위해 margin을 0으로 설정 */
+}
+
+.img_slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#theme_wrap div.slick-prev,
+#theme_wrap div.slick-next{
+    z-index: 1; /* 이미지 위로 올리기 */
+    font-size: 30px; /*화살표 크기 */
+    color: #5a5a5a; /* 색상 변경 */
+}
+
+#theme_wrap div.slick-prev::before{
+    /*left: 10px; 왼쪽 여백 조절  */
+    content: '\2190'; /* 화살표 아이콘(→)의 유니코드를 사용 */
+    color: #5a5a5a; /* 색상 변경 */
+}
+#theme_wrap div.slick-next::before{
+    /*right: 10px;  오른쪽 여백 조절 */
+    content: '\2192'; /* 화살표 아이콘(←)의 유니코드를 사용 */
+    color: #5a5a5a; /* 색상 변경 */
+}
+
+/*modal start*/
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+    /* z-index 설정 */
+    z-index: 1000; /* 적절한 값으로 조절 */
+
+    width: 500px; /* 적절한 값으로 조절 */
+    height: 500px; /* 적절한 값으로 조절 */
+    max-width: 90%; /* 최대 너비 */
+    max-height: 90%; /* 최대 높이 */
+}
+
+.cancle_btn{
+    color: #5a5a5a;
+}
