@@ -22,7 +22,7 @@ React를 이용한 여행지 추천 웹페이지 구현 Project
 
 ## 2️⃣ 프로젝트 구성
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/4b5586b7-f187-4e65-8bba-cb9af3b94c07/a679697b-bbf7-4c23-a3a6-1c5ff915e7a6/Untitled.png)
+![image02](https://github.com/user-attachments/assets/ed85934f-68ad-4e6a-acae-0e8b08a836a8)
 
 ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/4b5586b7-f187-4e65-8bba-cb9af3b94c07/411fc14b-292d-4ad4-ab61-8d21e8ac8fd9/Untitled.png)
 
