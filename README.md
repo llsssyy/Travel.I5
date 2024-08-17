@@ -24,17 +24,17 @@ React를 이용한 여행지 추천 웹페이지 구현 Project
 
 ![image02](https://github.com/user-attachments/assets/ed85934f-68ad-4e6a-acae-0e8b08a836a8)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/4b5586b7-f187-4e65-8bba-cb9af3b94c07/411fc14b-292d-4ad4-ab61-8d21e8ac8fd9/Untitled.png)
+![image03](https://github.com/user-attachments/assets/c0943527-77cd-4487-baf1-b9c7434b51c0)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/4b5586b7-f187-4e65-8bba-cb9af3b94c07/4f40e836-55b4-4e52-a46a-fa5c05708379/Untitled.png)
+![image04](https://github.com/user-attachments/assets/305e34b9-98e8-41e8-864c-4678fc3f1d91)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/4b5586b7-f187-4e65-8bba-cb9af3b94c07/88972bdd-b2d6-4db6-88c2-b9c51ef14d17/Untitled.png)
+![image05](https://github.com/user-attachments/assets/caa28098-5590-4fbf-aa10-93aa696bbea2)
 
 ## 3️⃣ 핵심기능
 
 ### 1. 멤버 서비스
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/4b5586b7-f187-4e65-8bba-cb9af3b94c07/97706ea1-cafa-4009-b084-acf85fbb3976/Untitled.png)
+![image06](https://github.com/user-attachments/assets/2292549b-1bc5-4935-b3f2-6ab5c2af214d)
 
 - **회원가입, 회원탈퇴, 정보수정**
     - **local storage**를 이용하여 **회원 DB**를 저장하여 **회원 관리 기능** 구현하였음.
@@ -42,9 +42,9 @@ React를 이용한 여행지 추천 웹페이지 구현 Project
 
 ### 2. 유저에게 여행지의 정보를 제공
 
-![image01.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4b5586b7-f187-4e65-8bba-cb9af3b94c07/7e16a9ab-dfe4-4af6-9a68-1ba593d839a0/image01.png)
+![image07](https://github.com/user-attachments/assets/8294a46a-58ea-4c88-9e6e-73da53fdf0b9)
 
-![image02.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4b5586b7-f187-4e65-8bba-cb9af3b94c07/1746748a-7db4-42c2-ad92-7c6713c49029/image02.png)
+![image08](https://github.com/user-attachments/assets/d74fa7a7-58eb-4205-995a-b47e2a16e19b)
 
 - **React-Slick** 및 **React-Swiper** 라이브러리를 이용하여 메인 **캐러셀** 및 **지역별** , **테마별** 추천 여행지 **캐러셀** 기능 구현하였음.
 - **각각의 여행지**를 클릭 시 **해당 여행지의 정보가 출력** 되게끔 구현하였음.
@@ -52,7 +52,7 @@ React를 이용한 여행지 추천 웹페이지 구현 Project
 
 ### 3. 댓글 작성 기능
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/4b5586b7-f187-4e65-8bba-cb9af3b94c07/202c1a16-efc8-4553-83aa-481b63de79e8/Untitled.png)
+![image09](https://github.com/user-attachments/assets/4fe42a46-2b39-4ef9-99dc-d3aa8c6bc106)
 
 - **로그인 한 회원**만 **댓글 작성** 가능. 자신의 댓글 **수정** 및 삭제 **가능**
     - 여행지의 **key값**으로 **코멘트 DB**에 등록되어 있는 **댓글 출력**
